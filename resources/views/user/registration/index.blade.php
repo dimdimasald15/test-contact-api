@@ -11,7 +11,7 @@
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">{{ $title }}</h1>
                     </div>
-                    <form id="form-registrasi">
+                    <form id="form-registration">
                         @csrf
                         <div class="form-group">
                             <input type="username" class="form-control form-control-user" id="username" name="username" placeholder="Enter Username...">
@@ -26,7 +26,7 @@
                             <div class="invalid-feedback errpassword"></div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg btn-block btnsubmit" tabindex="4">
-                            Registrasi
+                            registration
                         </button>
                         <hr>
                     </form>
@@ -44,7 +44,7 @@
 <script>
     $(function() {
 
-        $("#form-registrasi").submit(function(e) {
+        $("#form-registration").submit(function(e) {
             e.preventDefault();
             let formdata = $(this).serialize();
             $.ajax({

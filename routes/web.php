@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [LoginController::class, 'index']);
-Route::get('/registrasi', [LoginController::class, 'registrasi']);
+Route::get('/registration', [LoginController::class, 'registration']);
 Route::prefix('admin')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
     Route::get('users', [UserController::class, 'index']);

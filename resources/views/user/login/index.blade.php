@@ -27,7 +27,7 @@
                         <hr>
                     </form>
                     <div class="text-center">
-                        <a class="small" href="{{ url('registrasi') }}">Create an Account!</a>
+                        <a class="small" href="{{ url('registration') }}">Create an Account!</a>
                     </div>
                 </div>
             </div>

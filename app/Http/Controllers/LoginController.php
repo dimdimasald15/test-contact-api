@@ -12,14 +12,14 @@ class LoginController extends Controller
             'title' => 'Login',
             'nav' => 'login'
         ];
-        return view('login.index', $data);
+        return view('user.login.index', $data);
     }
-    public function registrasi()
+    public function registration()
     {
         $data = [
-            'title' => 'Registrasi',
-            'nav' => 'registrasi'
+            'title' => 'Registration',
+            'nav' => 'registration'
         ];
-        return view('registrasi.index', $data);
+        return view('user.registration.index', $data);
     }
 }
